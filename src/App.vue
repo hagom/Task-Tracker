@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Header title="Task Tracker"/>
-    <Task :tasks="tasks"/>
+    <Tasks :tasks="tasks"/>
   </div>
 </template>
 
@@ -18,12 +18,12 @@ export default {
 
   data(){
     return {
-      task:[]
+      tasks:[]
     }
   },
 
   created(){
-    this.task = 
+    this.tasks = 
     [
       {
         id:1,
